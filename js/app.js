@@ -8,9 +8,9 @@ function createNote(title, text) {
     <div class="note-header">
       <p id="note-title">${title}</p>
       <textarea id="note-title-input" class="hidden">${title}</textarea>
-      <div>
-        <button class="note-edit"><i class="fa-solid fa-pen-to-square"></i></button>
-        <button class="note-delete"><i class="fa-solid fa-trash"></i></button>
+      <div class="box_btn">
+        <button class="note-edit btn"><i class="fa-solid fa-pen-to-square"></i></button>
+        <button class="note-delete btn"><i class="fa-solid fa-trash"></i></button>
       </div>
     </div>
     <p id="note-text">${text}</p>
