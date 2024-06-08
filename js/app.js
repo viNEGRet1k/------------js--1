@@ -1,5 +1,6 @@
 const notesEl = document.querySelector('.notes');
 const addBtn = document.querySelector('.note-add')
+let elId = 1;
 
 function createNote(title, text) {
   const noteEl = document.createElement('div');
@@ -49,6 +50,6 @@ function createNote(title, text) {
 }
 
 addBtn.addEventListener('click', (e) => {
-  const el = createNote("Заголовок", "Ваш текст");
+  const el = createNote(`Нотатка ${elId ++}`, "Ваш текст");
   notesEl.appendChild(el);
 });
